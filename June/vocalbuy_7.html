@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap_css/bootstrap.css">
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./myJS/cart.js"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>AI Megpoid</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fs-4">
+        <div class="container-fluid">
+            <a class="font-primary-index navbar-brand fs-4" href="./index copy.html">HSY△</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link font-secondary-index" href="creater.html">創作者</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-secondary-index" href="songs.html">作品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-secondary-index" href="vocal.html">VOCAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-secondary-index" href="news.html">最新消息</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-secondary-index" href="login.html">會員中心</a>
+                    </li>
+                </ul>
+                <a href="./cartagree.html"><i id="cartAcount" class="fa-solid fa-cart-shopping text-light"></i></a>
+            </div>
+
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+            aria-label="breadcrumb">
+            <ol class="breadcrumb p-3">
+                <li class="breadcrumb-item"><a class="none-decoration" href="index copy.html">首頁</a></li>
+                <li class="breadcrumb-item"><a class="none-decoration" href="vocal.html">VOCAL</a></li>
+                <li class="breadcrumb-item active" aria-current="page">AI Megpoid</li>
+
+    </div>
+
+    <div class="container clearfix">
+        <div class="w-25 float-start mt-5">
+            <ol class="list-none-deco">
+                <li class="me-2"><a href="./vocalbuy_1.html"
+                        class="p-2 content-sidebar none-decoration w-100 d-inline-block">初音ミク V4X</a></li>
+                <li class="me-2"><a href="./vocalbuy_2.html"
+                        class="p-2 content-sidebar none-decoration w-100 d-inline-block">鏡音リン・レン V4X</a></li>
+                <li class="me-2"><a href="./vocalbuy_3.html"
+                        class="p-2 content-sidebar none-decoration w-100 d-inline-block">KAITO V3</a></li>
+                <li class="me-2"><a href="./vocalbuy_4.html"
+                        class="p-2 content-sidebar none-decoration w-100 d-inline-block">MEIKO V3</a></li>
+                <li class="me-2"><a href="./vocalbuy_5.html"
+                        class="p-2 content-sidebar none-decoration w-100 d-inline-block">巡音ルカ V4X</a></li>
+                <li class="me-2"><a href="./vocalbuy_6.html"
+                        class="p-2 content-sidebar none-decoration w-100 d-inline-block">がくっぽいど Complete</a></li>
+                <li class="me-2"><a href="./vocalbuy_7.html"
+                        class="p-2 content-sidebar none-decoration w-100 d-inline-block">AI Megpoid</a></li>
+            </ol>
+        </div>
+        <div class="w-75 float-start clearfix mt-5">
+            <img class="w-50 float-start" src="./images/GUMI.jpg" alt="">
+            <div class="w-50 float-start">
+                <h1 id="itemName" class="font-primary-index" data-name="AI Megpoid">AI Megpoid</h1>
+                <br><br>
+                <p class="font-content">歌手・声優「中島愛」の声をベースに制作したVOCALOID:AI 専用歌声ボイスバンク。</p>
+                <br>
+                <hr>
+                <p id="itemPrice" data-price="100" class="price">100</p>
+                <hr>
+                <br><br><br>
+                <form class="text-center clearfix" action="">
+                    <input class="float-start PlusMinusBtn font-primary-index" onclick="minus()" type="button" value="-">
+                    <input class="float-start inputWrite" type="text" id="acount" value="0">
+                    <input class="float-start PlusMinusBtn font-primary-index" onclick="plus()" type="button" value="+">
+                    <input onclick="toCart()" type="button" value="放入購物車" class="font-secondary-index cart float-end">
+                </form>
+            </div>
+            <div class="w-100 float-start">
+                <br><br><br>
+                <h2>規格</h2>
+                <table class="table align-middle">
+                    <tr>
+                        <th>製品名</th>
+                        <td>VOCALOID6 Voicebank AI Megpoid</td>
+                    </tr>
+                    <tr>
+                        <th>品番</th>
+                        <td>V6VB-MPHDL</td>
+                    </tr>
+                    <tr>
+                        <th>ハードディスク容量</th>
+                        <td>30MB(*)</td>
+                    </tr>
+                    <tr>
+                        <th>発売元</th>
+                        <td>株式会社インターネット</td>
+                    </tr>
+                    <tr>
+                        <th>企画</th>
+                        <td>株式会社インターネット</td>
+                    </tr>
+                    <tr>
+                        <th>言語</th>
+                        <td>日本語(母国語)、英語、中国語</td>
+                    </tr>
+                </table>
+                <p>(*)ボイスバンクのみの容量
+                    <br>合わせてご使用のEditorならびにDAWもしくはVOCALO CHANGER PLUGINの容量をご確認ください。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid clearfix">
+        <div class="row bg-secondary p-2">
+            <h4 class="col-1 text-light justify-content-center font-primary-index">
+                HSY△
+            </h4>
+            <div class="col-11">
+                <ul class="nav m-auto justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-light font-secondary-index" href="#">創作者</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light font-secondary-index" href="#">作品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light font-secondary-index" href="#">VOCAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light font-secondary-index" href="#">最新消息</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light font-secondary-index" href="#">會員中心</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <script src="./myJS/showCart.js"></script>
+</body>
+
+</html>

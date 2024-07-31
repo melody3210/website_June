@@ -1,0 +1,292 @@
+.none-border {
+    border-style: none;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-33 {
+    width: 33.3333%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-70>p {
+    line-height: 40px;
+}
+
+.font-primary-index {
+    font-family: "Noto Serif TC", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.font-secondary-index {
+    font-family: "Noto Serif TC", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.font-content-index {
+    font-family: "Noto Serif TC", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.font-primary {
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.font-secondary {
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-content {
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.bc-image {
+    background-image: url(../images/bc.png);
+}
+
+.none-decoration {
+    text-decoration: none;
+}
+
+.list-none-deco {
+    list-style-type: none;
+}
+
+/*側邊欄背景跟文字要分開寫*/
+
+.content-sidebar {
+    background-color:#FFFF99;
+    text-align: left;
+    margin-right: 10px;
+    color:#996600;
+    border-bottom: 2px solid #996600;
+}
+
+.content-sidebar:hover {
+    background-color:#996600;
+    color: #FFFFCC;
+    border-bottom: 2px solid #FFFFCC;
+
+
+}
+.fa-cart-shopping::before{
+    margin-right: 10px;
+}
+.tag {
+    bottom: 0;
+    margin: 0px;
+    padding: 10px;
+    background-color:white;
+}
+/* .border-tag{
+    border-right: 1px solid darkcyan;
+    border-bottom:1px solid darkcyan;
+} */
+.tag>a {
+    color: black;
+}
+
+.tag>a:hover {
+    color: rgb(236, 49, 155);
+}
+
+.tag>.fs-1::before {
+    content: "USD";
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 25px;
+    margin-right: 3px;
+    font-style: normal;
+}
+
+.cover:hover>img {
+    border: 1rem solid darkcyan;
+}
+
+table,
+tr,
+td,
+th {
+    padding: 20px;
+}
+
+.price::before {
+    content: "價錢：USD ";
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 20px;
+    font-style: normal;
+
+}
+
+.price {
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 35px;
+    font-style: normal;
+
+}
+
+.breadcrumb-item>a {
+    color: rgb(66, 110, 229);
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+
+}
+
+.breadcrumb-item>a:hover {
+    color: rgb(172, 187, 231);
+}
+
+.breadcrumb-item.active {
+    color: black;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.news-p {
+    background-color: lightgray;
+}
+
+.news-a {
+    color: darkolivegreen;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+
+}
+
+.news-a:hover {
+    color: goldenrod;
+}
+
+/*處理背景照片的不透明度*/
+:root{
+    --bcImg : url('../images/bc-song-1.jpg');
+}
+#scollimg>*{
+    position: relative;
+}
+#scollimg{
+    position: relative;
+}
+#scollimg::before{
+    content: "";
+    display: block;
+    background-size: cover;
+    background-image: var(--bcImg);
+    opacity: 0.5;
+    position: absolute;
+    background-attachment: fixed;
+    /* 偏移值皆設為 0，讓僞元素跟父元素一樣大小 */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition-duration: 2s;
+    filter: blur(2px);
+}
+.inputWrite{
+    text-align: center;
+    width: 50px;
+    height: 40px;
+    border: none;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 25px;
+    font-style: normal;
+
+}
+.inputWriteCart{
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    border-top:1px solid lightgray ;
+    border-bottom:1px solid lightgray ;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 25px;
+    font-style: normal;
+
+}
+.PlusMinusBtn{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    color: rgb(180, 135, 21);
+    border: 1px solid lightgray;
+    font-size: 25px;
+    background-color: white;
+}
+.cart{
+    text-align: center;
+    border: none;
+    font-size: 25px;
+    background-color: white;
+}
+.cart:hover{
+    box-shadow: 0 0 10px 0px gray;
+}
+label.text-start>input{
+    width: 300px;
+    height:50px;
+    align-items: center;
+    padding-left: 15px;
+}
+.toTop{
+    position: fixed;
+    display: block;
+    right: 15px;
+    bottom: 15px;
+    text-decoration: none;
+    background-color: black;
+    width: 150px;
+    line-height: 75px;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 28px;
+    font-style: normal;
+}
+.toTop:hover{
+    color: white;
+}

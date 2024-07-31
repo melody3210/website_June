@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap_css/bootstrap.css">
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./myJS/cart.js"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>作品</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fs-4">
+        <div class="container-fluid">
+            <a class="font-primary-index navbar-brand fs-4" href="./index copy.html">HSY△</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link font-secondary-index" href="creater.html">創作者</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-secondary-index" href="songs.html">作品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-secondary-index" href="vocal.html">VOCAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-secondary-index" href="news.html">最新消息</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-secondary-index" href="login.html">會員中心</a>
+                    </li>
+                </ul>
+                <a href="./cartagree.html"><i id="cartAcount" class="fa-solid fa-cart-shopping text-light"></i></a>
+            </div>
+
+        </div>
+    </nav>
+    <div id="scollimg" class="container-fluid">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+            aria-label="breadcrumb">
+            <ol class="breadcrumb p-3">
+                <li class="breadcrumb-item"><a class="none-decoration" href="index copy.html">首頁</a></li>
+                <li class="breadcrumb-item active text-light" aria-current="page">作品</li>
+            </ol>
+        </nav>
+
+        <div class="container-fluid clearfix">
+            <div class="w-20 float-start">
+                <div class="text-center">
+                    <button id="allSong" class="btn btn-info">全部</button>
+                    <button id="storySong" class="btn btn-info">系列</button>
+                    <button id="singleSong" class="btn btn-info">單曲</button>    
+                </div>
+                <br><br>
+                <ul class="list-none-deco">
+                    <li class="me-2 storyList"><a class="p-2 content-sidebar none-decoration w-100 d-inline-block"
+                            href="#Ka">からくり卍ばーすと</a></li>
+                    <li class="me-2 storyList"><a class="p-2 content-sidebar none-decoration w-100 d-inline-block"
+                            href="#So">Soundless Voice</a></li>
+                    <li class="me-2 storyList"><a class="p-2 content-sidebar none-decoration w-100 d-inline-block"
+                            href="#Sy">Synchronicity ～巡る世界のレクイエム～</a></li>
+                    <li class="me-2 singleList"><a class="p-2 content-sidebar none-decoration w-100 d-inline-block"
+                            href="#Ame">雨夢楼</a></li>
+                    <li class="me-2 singleList"><a class="p-2 content-sidebar none-decoration w-100 d-inline-block"
+                            href="#Hana">背徳の花</a></li>
+                    <li class="me-2 singleList"><a class="p-2 content-sidebar none-decoration w-100 d-inline-block"
+                            href="#Nemesis">亡国のネメシス</a></li>
+                    <li class="me-2 singleList"><a class="p-2 content-sidebar none-decoration w-100 d-inline-block"
+                            href="#Snow">赤と白と黒の系譜</a></li>
+                    <li class="me-2 singleList"><a class="p-2 content-sidebar none-decoration w-100 d-inline-block"
+                            href="#gang">イカサマ⇔カジノ</a></li>
+
+                </ul>
+            </div>
+            <div class="w-80 float-start">
+                <div id="story">
+                    <div id="Ka" class="content text-center">
+                        <h1 class="font-primary-index">- からくり卍ばーすと -</h1>
+                        <br><br><br>
+                        <p class="fs-3 font-secondary">時刻は丑三つ時-巨大犯罪組織と特殊警察、敵対する殺戮人形と特殊兵士。<br>
+                            全てを破壊し尽くすまで戦い続ける二人が、今宵出会う。<br>
+
+                            破壊スルこと-其レが、存在意義の証明。</p>
+                        <br><br>
+                        <iframe width="840" height="472.5"
+                            src="https://www.youtube.com/embed/LrVh8ken6D4?si=mjO1tA7iS1EAsBxl&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+                        <br><br>
+                        <p class="fs-3 font-secondary">奪い合うために、殺し合うために、生きるのなら--。</p>
+                        <br><br>
+                        <iframe width="840" height="472.5"
+                            src="https://www.youtube.com/embed/T4C7S-UmPpo?si=6cU_Z0oa7fnJZF5F&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+                    </div>
+                    <br><br><br>
+                    <div id="So" class="content text-center">
+                        <h1 class="font-primary-index">- Soundless Voice -</h1>
+                        <br><br>
+                        <p class="fs-3 font-secondary">ボカロ=声=命という原点がテーマ<br>
+                            雪は音を吸収する→雪はボカロにとって毒という設定</p>
+                        <br><br>
+                        <iframe width="840" height="472.5"
+                            src="https://www.youtube.com/embed/sH92A1du050?si=7AUo-GVRfXP2rRyD&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+                        <br><br>
+                        <p class="fs-3 font-secondary">『soundless voice』のアンサーソング</p>
+                        <br><br>
+                        <iframe width="840" height="472.5"
+                            src="https://www.youtube.com/embed/d-TJBdRV76I?si=V0_nEJIoaxdse4Wp&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+                    </div>
+                    <br><br><br>
+                    <div id="Sy" class="content text-center">
+                        <h1 class="font-primary-index">- Synchronicity 三部曲 -</h1>
+                        <br><br>
+                        <p class="fs-3 font-secondary">少年は旅立つ。見果てぬ空の彼方、少女の歌声を頼りに。</p>
+                        <br><br>
+
+                        <iframe width="840" height="472.5"
+                            src="https://www.youtube.com/embed/PQvXLTh093M?si=VnBqfb7-swKSxCDa&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+                        <br><br>
+
+                        <p class="fs-3 font-secondary">少年は少女を解放する為戦い、少女は少年の世界を守る為歌う。その、命尽きるまで…。</p>
+                        <br><br>
+
+                        <iframe width="840" height="472.5"
+                            src="https://www.youtube.com/embed/Nh5LyOgS_0E?si=-hNQqWmEVxj1_yvC&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+                        <br><br>
+
+                        <p class="fs-3 font-secondary">永久の鎮魂歌。</p>
+                        <br><br>
+
+                        <iframe width="840" height="472.5"
+                            src="https://www.youtube.com/embed/A83q5bQquJc?si=fet6-qRn0HMoh4LY&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+                    </div>
+                    <br><br><br>
+
+                </div>
+                <div id="single">
+                    <div id="Ame" class="content text-center">
+                        <h1 class="font-primary-index">雨夢楼</h1>
+                        <br><br><br>
+                        <p class="fs-3 font-secondary">微笑み、未来を映す明るい瞳 <br>
+                            憂い、悲しい過去を称える瞳 <br>
+                            対称的な二人の少女、互いの傷を慰め合い生きることを誓う <br>
+                            愛と欲望の世界で、いつしか二人の心はすれ違っていく <br>
+                        </p>
+                        <br><br>
+                        <iframe width="840" height="472.5"
+                            src="https://www.youtube.com/embed/16nqYQasbb0?si=s8hK5gn9Uqqjy1lZ&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <br><br><br>
+                    <div id="Hana" class="content text-center">
+                        <h1 id="" class="font-primary-index">背徳の花</h1>
+                        <br><br>
+                        <p id="" class="fs-3 font-secondary">花街で評判の踊り子を見ようと、上官に連れられてやってきた将校。<br>
+                            酔ったのは酒にか、それとも･･･。<br>
+                            戯れ程度な好奇心で手折ったはずの恋の花は、<br>
+                            いつしか背徳の花となって狂い咲いた―<br>
+                        </p>
+                        <br><br>
+                        <iframe width="840" height="472.5"
+                            src="https://www.youtube.com/embed/ISHzNGDhX8A?si=5yobR8fhNHPaes9L&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br><br>
+                    </div>
+                    <br><br><br>
+
+                    <div id="Nemesis" class="content text-center">
+                        <h1 class="font-primary-index">亡国のネメシス</h1>
+                        <br><br>
+                        <p class="fs-3 font-secondary">君と見てた夢の未来を…</p>
+                        <br><br>
+                        <iframe width="840" height="472.5"
+                            src="https://www.youtube.com/embed/aJBlHHGQHJo?si=grH4p8-YLAJehiMy&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br><br>
+                    </div>
+                    <br><br><br>
+                    <div id="Snow" class="content text-center">
+                        <h1 class="font-primary-index">赤と白と黒の系譜</h1>
+                        <br><br>
+                        <p class="fs-3 font-secondary">「粉雪の白、血の赤、黒檀の黒、授けて…」<br>
+                            女は神に願いて<br>
+                            生まれ堕ちた、奇跡の子<br></p>
+                        <br><br>
+                        <iframe width="840" height="472.5"
+                            src="https://www.youtube.com/embed/GC3_vIlIGYQ?si=xhBqr00YWhUIcmo-&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <br><br><br>
+                    <div id="gang" class="content text-center">
+                        <h1 class="font-primary-index">イカサマ⇔カジノ</h1>
+                        <br><br>
+                        <p class="fs-3 font-secondary">とあるアンダーカジノでのお話。<br>
+                            双子の天才ギャンブラーがおりました。<br>
+                            彼らとの勝負で賭けるのは、お金ではなく…。<br></p>
+                        <br><br>
+                        <iframe width="840" height="472.5"
+                            src="https://www.youtube.com/embed/tjkYVU8IahE?si=XoxO0PN3a6Vgr8ix&amp;controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <br><br><br>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <a href="#" class="toTop">TOP</a>
+
+    </div>
+    <div class="container-fluid clearfix">
+        <div class="row bg-secondary p-2">
+            <h4 class="col-1 text-light justify-content-center font-primary-index">
+                HSY△
+            </h4>
+            <div class="col-11">
+                <ul class="nav m-auto justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-light font-secondary-index" href="./creater.html">創作者</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light font-secondary-index" href="./songs.html">作品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light font-secondary-index" href="./vocal.html">VOCAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light font-secondary-index" href="./news.html">最新消息</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light font-secondary-index" href="./login.html">會員中心</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <script src="./myJS/songsControl.js"></script>
+    <script src="./myJS/showCart.js"></script>
+
+</body>
+
+</html>

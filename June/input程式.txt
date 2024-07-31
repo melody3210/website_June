@@ -1,0 +1,19 @@
+購物車要用到的東西
+localStorage.set//get
+格式為：
+localStorage.setItem("名稱","物件")==>localStorage只會保留string
+localStorage.getItem("名稱")=>拿物件
+
+所以我如果想在購物畫面存檔
+=>set//(總)數量、品名、可能圖片
+
+在點擊'加入購物車'時，value=0不用紀錄
+陣列：[]==>轉成string->JSON.stringify()//string轉array->JSON.parse()
+刪除陣列紀錄=>splice(起始位置,刪幾個)
+
+資料轉JSON成功
+=>//
+
+    生成新物件//存物件(可以=>重整的時候才會更新)//讀取物件
+止損//////////////////////////////////////////////////////////////////////////////////
+

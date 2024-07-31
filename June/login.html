@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./bootstrap_css/bootstrap.css">
+        <script src="./js/bootstrap.bundle.js"></script>
+        <script src="./myJS/cart.js"></script>
+        <link rel="stylesheet" href="./CSS/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>會員登入</title>
+    </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fs-4">
+        <div class="container-fluid">
+            <a class="font-primary-index navbar-brand fs-4" href="./index copy.html">HSY△</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link font-secondary-index" href="creater.html">創作者</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-secondary-index" href="songs.html">作品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-secondary-index" href="vocal.html">VOCAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-secondary-index" href="news.html">最新消息</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-secondary-index" href="login.html">會員中心</a>
+                    </li>
+                </ul>
+                <a href="./cartagree.html"><i id="cartAcount" class="fa-solid fa-cart-shopping text-light"></i></a>
+            </div>
+
+        </div>
+    </nav>
+
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+        aria-label="breadcrumb">
+        <ol class="breadcrumb p-3">
+            <li class="breadcrumb-item"><a class="none-decoration" href="index copy.html">首頁</a></li>
+            <li class="breadcrumb-item active" aria-current="page">會員登入</li>
+        </ol>
+    </nav>
+    <div class="container-fluid">
+        <br><br><br>
+        <div id="logInWindow" class="text-center">
+            <h1 class="font-primary-index">會員登入</h1><br><br>
+            <label class="font-content-index text-start fs-4">帳號：<br><input type="text"></label><br><br>
+            <label class="font-content-index text-start fs-4">密碼：<br><input type="text"></label><br><br>
+            <input class="btn btn-dark me-5" id="logIn" type="button" value="登入">
+            <input class="btn btn-warning text-danger" id="signIn" type="button" value="沒有帳號？"> 
+        </div>
+        <div id="signInWindow" class="text-center" style="display: none;">
+            <h1 class="font-primary-index">會員註冊</h1><br><br>
+            <label class="font-content-index text-start fs-4">帳號：<br><input type="text"></label><br><br>
+            <label class="font-content-index text-start fs-4">密碼：<br><input type="text"></label><br><br>
+            <label class="font-content-index text-start fs-4">名字：<br><input type="text"></label><br><br>
+            <label class="font-content-index text-start fs-4">生日：<br><input type="text"></label><br><br>
+            <label class="font-content-index text-start fs-4">性別：<input type="radio">男<input type="radio">女</label><br><br>
+            <input class="btn btn-dark" id="Done" type="button" value="完成註冊">
+        </div>
+
+    </div>
+    <div id="footer" class="container-fluid clearfix fixed-bottom">
+        <div class="row bg-secondary p-2">
+            <h4 class="col-1 text-light justify-content-center font-primary-index">
+                HSY△
+            </h4>
+            <div class="col-11">
+                <ul class="nav m-auto justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-light font-secondary-index" href="./creater.html">創作者</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light font-secondary-index" href="./songs.html">作品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light font-secondary-index" href="./vocal.html">VOCAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light font-secondary-index" href="./news.html">最新消息</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light font-secondary-index" href="./login.html">會員中心</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <script src="./myJS/showCart.js"></script>
+    <script>
+        signIn.onclick = function(){
+            logInWindow.style.display = 'none';
+            signInWindow.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
